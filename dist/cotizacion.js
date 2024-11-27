@@ -28,12 +28,12 @@ document.getElementById('cotizadorForm').addEventListener('submit', function(e) 
         break;
     }
 
-    // Calcular precio total
+    // Calcular precio total segun pagina
     let precioTotal = precioBase + (secciones * precioSeccion);
     if (necesitaLogo) precioTotal += precioLogo;
     if (necesitaSEO) precioTotal += precioSEO;
 
-    // Mostrar resultado
+    // Mostrar resultado de la cotizacion 
     const resultado = document.getElementById('resultado');
     const precioFinal = resultado.querySelector('.precio-final');
     const detalles = resultado.querySelector('.detalles');
@@ -41,7 +41,7 @@ document.getElementById('cotizadorForm').addEventListener('submit', function(e) 
     precioFinal.textContent = `$${precioTotal} Pesos`;
     
     let detallesHTML = `
-      <h3>Detalles de la cotización:</h3>
+      <h3>Detalles de tu cotización:</h3>
       <ul>
         <li>Precio base (${tipo}): $${precioBase}</li>
         <li>Secciones (${secciones}): $${secciones * precioSeccion}</li>
