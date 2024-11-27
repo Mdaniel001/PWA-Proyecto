@@ -11,20 +11,20 @@ document.getElementById('cotizadorForm').addEventListener('submit', function(e) 
 
     // Precios base
     let precioBase = 0;
-    const precioSeccion = 50;
-    const precioLogo = 300;
-    const precioSEO = 400;
+    const precioSeccion = 200000;
+    const precioLogo = 120000;
+    const precioSEO = 100000;
 
     // Determinar precio base según tipo
     switch(tipo) {
       case 'restaurante':
-        precioBase = 800;
+        precioBase = 110000;
         break;
       case 'construccion':
-        precioBase = 1000;
+        precioBase = 800000;
         break;
       case 'general':
-        precioBase = 600;
+        precioBase = 1000000;
         break;
     }
 
@@ -38,7 +38,7 @@ document.getElementById('cotizadorForm').addEventListener('submit', function(e) 
     const precioFinal = resultado.querySelector('.precio-final');
     const detalles = resultado.querySelector('.detalles');
 
-    precioFinal.textContent = `$${precioTotal} USD`;
+    precioFinal.textContent = `$${precioTotal} Pesos`;
     
     let detallesHTML = `
       <h3>Detalles de la cotización:</h3>
