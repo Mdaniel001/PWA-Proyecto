@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cotizador de Sitios Web-FartTe</title>
+  <link rel="stylesheet" href="../css/styleCotizacion.css">
+  </head>
+<body>
+  <div class="container">
+    <h1>Cotizador de Sitios Web</h1>
+    <form id="cotizadorForm">
+      <div class="form-group">
+        <label for="nombre">Nombre de la Empresa o Sitio</label>
+        <input type="text" id="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="secciones">Cantidad de Secciones</label>
+        <input type="number" id="secciones" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="tipo">Tipo de Sitio</label>
+        <select id="tipo" required>
+          <option value="">Seleccione una opción</option>
+          <option value="restaurante">Restaurante</option>
+          <option value="construccion">Construcción</option>
+          <option value="general">Negocio General</option>
+        </select>
+      </div>
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="logo">
+        <label for="logo">¿Necesita creación de logo?</label>
+      </div>
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="seo">
+        <label for="seo">¿Desea posicionamiento web (SEO)?</label>
+      </div>
+      <button type="submit">Calcular Cotización</button>
+      <div class="button-group">
+        <a href="../index.html" class="home-btn">
+          <button type="button" class="home-btn">Volver a Inicio</button>
+        </a>
+        <a href="" target="_blank" class="whatsapp-btn">
+          <button type="button" class="whatsapp-btn"> Conectar con un Asesor </button>
+        </a>
+      </div>
+    </form>
+    <div id="resultado">
+      <h2>Cotización Estimada</h2>
+      <div class="precio-final"></div>
+      <div class="detalles"></div>
+    </div>
+  </div>  
+</body>
+</html>
