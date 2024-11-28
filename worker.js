@@ -11,6 +11,7 @@ self.addEventListener('install', function(event){
               '/dist/serviceWork.js',
               '/dist/cotizacion.js',
               '/pages/cotizacion.html',
+              
          ])
      })
     );
