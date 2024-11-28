@@ -7,7 +7,7 @@
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/imagenes/logo app3.png",
+      "src": "PWA-Proyecto-FartTek/imagenes/logo app3.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
@@ -21,7 +21,7 @@
   ],
   "screenshots": [
     {
-      "src": "/imagenes/pan1.png",
+      "src": "PWA-Proyecto-FartTek/imagenes/pan1.png",
       "sizes": "1200x800",
       "type": "imagenes/png",
       "form_factor": "wide"
