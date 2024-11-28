@@ -264,18 +264,20 @@
         </div>
       </footer>
        <script src="dist/contacto.js"></script>
-       <script src="./dist/serviceWork.js"></script>
-          <script>
-            if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./worker.js')
-            .then(function(reg) {
-            console.log('Service Worker registrado:', reg);
-            })
-            .catch(function(err) {
-                console.error('Error al registrar el Service Worker:', err);
-           });
-    }
-</script>    
+       <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/worker.js')
+              .then((registration) => {
+                console.log('Service Worker registrado con éxito:', registration);
+              })
+              .catch((error) => {
+                console.log('Error al registrar el Service Worker:', error);
+              });
+          });
+        }
+       </script>
+        
     </body>
 
         <!-- 
