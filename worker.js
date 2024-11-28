@@ -5,7 +5,7 @@ const urlsToCache = [
   '/css/styleCotizacion.css',
   '/css/stylePrincipal.css',
   '/worker.js',
-  '/manifest.json',
+  '/PWA-Proyecto-FartTek/manifest.json',
   '/pages/cotizacion.html',
   '/dist/cotizacion.js',
   '/imagenes/Bog Shoes.png',
