@@ -32,4 +32,11 @@ window.addEventListener('scroll', function() {
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
   }
+
+  //funcion para mostrar opciones en celulares 
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
   

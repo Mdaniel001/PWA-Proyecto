@@ -165,21 +165,33 @@
 
 
    /* Aqui programamos el diseño responsivo para celulares */ 
-   @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-    
-    .nav-links {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-      font-size: 2rem;
-      cursor: pointer;
-    }
+   /* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Ocultamos el menú inicialmente */
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 100%; /* Debajo de la barra de navegación */
+    right: 0;
+    background: var(--dark); /* Fondo del menú desplegable */
+    padding: 1rem;
+    width: 100%; /* Ocupa todo el ancho */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  .nav-links.active {
+    display: flex; /* Mostramos el menú cuando esté activo */
+  }
+
+  .menu-icon {
+    display: block; /* Mostramos el ícono del menú */
+    font-size: 1.5rem;
+    color: var(--light);
+    cursor: pointer;
+  }
+}
+
   
 
   /* Aqui agreamos estilos a la seccion */
