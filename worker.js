@@ -3,14 +3,14 @@ self.addEventListener('install', function(event){
      caches.open('first-app')
      .then(function(cache) {
          cache.addAll([
-             '/',
-              '/index.html',
-              '/pages/cotizacion.html',
-              '/css/styleCotizacion.css',
-              '/css/stylePrincipal.css',
-              '/dist/serviceWork.js',
-              '/dist/cotizacion.js',
-              '/pages/cotizacion.html',
+             './',
+              './index.html',
+              './pages/cotizacion.html',
+              './css/styleCotizacion.css',
+              './css/stylePrincipal.css',
+              './dist/serviceWork.js',
+              './dist/cotizacion.js',
+              './pages/cotizacion.html',
          ])
      })
     );
