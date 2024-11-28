@@ -23,13 +23,13 @@
     {
       "src": "/imagenes/pan1.png",
       "sizes": "1200x800",
-      "type": "imagenes/png",
+      "type": "image/png",
       "form_factor": "wide"
     },
     {
       "src": "/imagenes/pan2.png",
       "sizes": "800x600",
-      "type": "imagenes/png"
+      "type": "image/png"
     }
   ]
 }
