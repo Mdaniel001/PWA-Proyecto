@@ -11,6 +11,12 @@ self.addEventListener('install', function(event){
               './dist/serviceWork.js',
               './dist/cotizacion.js',
               './pages/cotizacion.html',
+              './manifest.json',
+              './imagenes/Logo FARTTEK.png',
+              './imagenes/brayan.jpeg',
+              './imagenes/Daniel Laguna.jpeg',
+              './imagenes/portada.jpg',
+              './imagenes',
          ])
      })
     );
