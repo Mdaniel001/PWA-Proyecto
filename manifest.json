@@ -15,7 +15,7 @@
     {
       "src": "/imagenes/logo app1.png",
       "sizes": "512x512",
-      "type": "imagenes/png",
+      "type": "image/png",
       "purpose": "any"
     }
   ],
@@ -29,7 +29,8 @@
     {
       "src": "/imagenes/pan2.png",
       "sizes": "800x600",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
