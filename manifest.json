@@ -1,7 +1,7 @@
 {
   "name": "Fartteck",
   "short_name": "Fartteck",
-  "start_url": "/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
@@ -29,8 +29,7 @@
     {
       "src": "/imagenes/pan2.png",
       "sizes": "800x600",
-      "type": "image/png",
-      "form_factor": "wide"
+      "type": "image/png"
     }
   ]
 }

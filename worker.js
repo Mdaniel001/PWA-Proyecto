@@ -1,30 +1,31 @@
 const CACHE_NAME = 'CacheFar';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/css/styleCotizacion.css',
-  '/css/stylePrincipal.css',
-  '/worker.js',
-  '/PWA-Proyecto-FartTek/manifest.json',
-  '/pages/cotizacion.html',
-  '/dist/cotizacion.js',
-  '/imagenes/Bog Shoes.png',
-  '/imagenes/brayan.jpeg',
-  '/imagenes/Daniel Laguna.jpeg',
-  '/imagenes/facebook.png',
-  '/imagenes/instagram.png',
-  '/imagenes/linkedin.png',
-  '/imagenes/Logo FARTTEK.png',
-  '/imagenes/maps.png',
-  '/imagenes/marketing.png',
-  '/imagenes/portada.jpg',
-  '/imagenes/Portada2.jpg',
-  '/imagenes/puntaDAnca.png',
-  '/imagenes/whatsapp.png',
-  '/imagenes/logo app1.png',
-  '/imagenes/logo app3.png',
-  '/imagenes/pan1.png',
-  '/imagenes/pan2.png',
+  './',
+  './index.html',
+  './css/styleCotizacion.css',
+  './css/stylePrincipal.css',
+  './worker.js',
+  './PWA-Proyecto-FartTek/manifest.json',
+  './pages/cotizacion.html',
+  './dist/cotizacion.js',
+  './imagenes/Bog Shoes.png',
+  './imagenes/brayan.jpeg',
+  './imagenes/Daniel Laguna.jpeg',
+  './imagenes/facebook.png',
+  './imagenes/instagram.png',
+  './imagenes/linkedin.png',
+  './imagenes/Logo FARTTEK.png',
+  './imagenes/maps.png',
+  './imagenes/marketing.png',
+  './imagenes/portada.jpg',
+  './imagenes/Portada2.jpg',
+  './imagenes/puntaDAnca.png',
+  './imagenes/whatsapp.png',
+  './imagenes/logoapp1.png',
+  './imagenes/logoapp2.png',
+  './imagenes/logoapp3.png',
+  './imagenes/pan1.png',
+  './imagenes/pan2.png',
 ];
 
 
@@ -62,7 +63,7 @@ self.addEventListener('fetch', (event) => {
         response ||
         fetch(event.request).catch(() => {
           if (event.request.destination === 'document') {
-            return caches.match('/index.html'); 
+            return caches.match('./index.html'); 
           }
         })
       );
